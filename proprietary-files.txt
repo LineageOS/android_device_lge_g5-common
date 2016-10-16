@@ -22,6 +22,7 @@ lib/libmorpho_superzoom.so
 lib/libqomx_core.so
 lib/libVDBase.so
 lib/libVDLowLightAPI.so
+vendor/lib/libflash_pmic.so 
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
