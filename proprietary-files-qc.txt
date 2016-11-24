@@ -33,7 +33,7 @@ vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 
 # CNE
-bin/cnd
+bin/cnd|1b62a7788a8ec9f3e96ac2a3c19a3e96a14b02c9
 etc/cne/SwimConfig.xml
 etc/cne/andsfCne.xml
 etc/permissions/ConnectivityExt.xml
@@ -57,7 +57,7 @@ vendor/lib64/libwqe.so
 vendor/lib64/libxml.so
 
 # DPM
-bin/dpmd
+bin/dpmd|47b0dfe22e4731fae961ad021be2ad83196665f2
 etc/dpm/dpm.conf
 etc/dpm/nsrm/NsrmConfiguration.xml
 etc/permissions/com.qti.dpmframework.xml
@@ -227,12 +227,12 @@ vendor/lib64/libquipc_os_api.so
 vendor/lib64/libsmemlog.so
 
 # Radio - IMS
-bin/ims_rtp_daemon
-bin/imscmservice
-bin/imsdatadaemon
-bin/imsqmidaemon
--vendor/app/ims/ims.apk
--vendor/app/imssettings/imssettings.apk
+bin/ims_rtp_daemon|d711751d84a1946046682f76994994779373b96d
+bin/imscmservice|9df8a5d3626fe8a60f2409dc729f76eacb968673
+bin/imsdatadaemon|6401f7d73b52fea7d46a21d5ac8e2dbbdd461dad
+bin/imsqmidaemon|e04f7b66d9f1b59ca1a9cb49d76f857a75d8b909
+-vendor/app/ims/ims.apk|19a9cb5997603e7da2ca724b547371dabe37aba8
+-vendor/app/imssettings/imssettings.apk|7fd33539960356169d1c29f668751854c1e41b51
 vendor/lib64/lib-dplmedia.so
 vendor/lib64/lib-ims-rcscmjni.so
 vendor/lib64/lib-imsSDP.so
@@ -252,8 +252,8 @@ vendor/lib64/lib-rtpcommon.so
 vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib64/lib-rtpsl.so
-vendor/lib64/libimscamera_jni.so
-vendor/lib64/libimsmedia_jni.so
+vendor/lib64/libimscamera_jni.so|4e756a51d6e159c9b1989cdd717d59b4843ac815
+vendor/lib64/libimsmedia_jni.so|0322d46b38c92964525b6b3d45822a971330b10f
 vendor/lib64/librcc.so
 vendor/lib64/libvoice-svc.so
 
