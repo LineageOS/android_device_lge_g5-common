@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a437d4f_63411339",
+        "filename": "lineage.dependencies",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2017-01-27T08:16:25Z",
+      "side": 1,
+      "message": "These should be moved to common as well.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 3
+      },
+      "revId": "0a0f9b131186a178b2860df45add6918d05c5a11",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
