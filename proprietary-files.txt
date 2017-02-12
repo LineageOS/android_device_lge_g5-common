@@ -336,3 +336,6 @@ etc/camera/imx219_alice_chromatix.xml
 etc/camera/imx234_chromatix.xml
 etc/camera/imx268_chromatix.xml
 etc/camera/t4ka3_chromatix.xml
+
+# Postprocessing
+etc/qdcm_calib_data_lgd_lg4946_1440p_command_mode_panel.xml
