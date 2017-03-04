@@ -337,5 +337,17 @@ etc/camera/imx234_chromatix.xml
 etc/camera/imx268_chromatix.xml
 etc/camera/t4ka3_chromatix.xml
 
+# Fingerprint
+bin/fingerprintd
+bin/fpc_early_loader
+lib/hw/fingerprint.msm8996.so
+lib/lib_fpc_tac_shared.so
+lib/libfpfactory.so
+lib/libfpfactory_jni.so
+lib64/hw/fingerprint.msm8996.so
+lib64/lib_fpc_tac_shared.so
+lib64/libfpfactory.so
+lib64/libfpfactory_jni.so
+
 # Postprocessing
 etc/qdcm_calib_data_lgd_lg4946_1440p_command_mode_panel.xml
