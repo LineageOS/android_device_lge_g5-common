@@ -15,11 +15,16 @@
 # limitations under the License.
 #
 
+DEVICE_COMMON_PATH := device/lge/g5-common
+
 # inherit from common msm8996
 -include device/lge/msm8996-common/BoardConfigCommon.mk
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
+
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_COMMON_PATH)/system.prop
 
 # inherit from the proprietary version
 -include vendor/lge/g5-common/BoardConfigVendor.mk
