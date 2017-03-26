@@ -350,4 +350,4 @@ lib64/libfpfactory.so
 lib64/libfpfactory_jni.so
 
 # Postprocessing
-etc/qdcm_calib_data_lgd_lg4946_1440p_command_mode_panel.xml
+etc/qdcm_calib_data_LGD_SIC_LG4946_1440p_Dual_cmd_mode_dsi_panel.xml
