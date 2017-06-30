@@ -1,5 +1,6 @@
 /*
  * Copyright 2015 The CyanogenMod Project
+ * Copyright 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,6 +45,9 @@ static struct light_state_t g_attention;
 
 char const*const LCD_FILE
         = "/sys/class/leds/lcd-backlight/brightness";
+
+char const*const LCD_EX_FILE
+        = "/sys/class/leds/lcd-backlight-ex/brightness";
 
 char const*const EMOTIONAL_BLINK_FILE
         = "/sys/class/lg_rgb_led/use_patterns/blink_patterns";
@@ -128,6 +132,8 @@ set_light_backlight(struct light_device_t* dev,
     int err = 0;
     int brightness = rgb_to_brightness(state);
     pthread_mutex_lock(&g_lock);
+    /* Set the secondary backlight to 0 in normal usage mode */
+    write_int(LCD_EX_FILE, 0);
     err = write_int(LCD_FILE, brightness);
     pthread_mutex_unlock(&g_lock);
     return err;
