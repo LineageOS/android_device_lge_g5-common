@@ -49,6 +49,9 @@ char const*const LCD_FILE
 char const*const LCD_EX_FILE
         = "/sys/class/leds/lcd-backlight-ex/brightness";
 
+char const*const LCD_MODE_FILE
+        = "/sys/class/graphics/fb0/cur_panel_mode";
+
 char const*const EMOTIONAL_BLINK_FILE
         = "/sys/class/lg_rgb_led/use_patterns/blink_patterns";
 
@@ -64,6 +67,36 @@ init_globals(void)
 {
     // init the mutex
     pthread_mutex_init(&g_lock, NULL);
+}
+
+static int
+read_int(char const* path)
+{
+    int fd;
+    static int already_warned = 0;
+
+    fd = open(path, O_RDONLY);
+    if (fd >= 0) {
+        char buffer[3];
+        char intBuffer[3];
+        int bytes = 3;
+        int amt = read(fd, buffer, bytes);
+        int number;
+        close(fd);
+
+        memcpy(intBuffer, buffer, bytes);
+        intBuffer[3] = '\0';
+
+        number = atoi(intBuffer);
+        ALOGE("read_int returned %d", number);
+        return number;
+    } else {
+	if (already_warned == 0) {
+            ALOGE("read_int failed to open %s\n", path);
+            already_warned = 1;
+        }
+	return -errno;
+    }
 }
 
 static int
@@ -132,9 +165,17 @@ set_light_backlight(struct light_device_t* dev,
     int err = 0;
     int brightness = rgb_to_brightness(state);
     pthread_mutex_lock(&g_lock);
-    /* Set the secondary backlight to 0 in normal usage mode */
-    write_int(LCD_EX_FILE, 0);
-    err = write_int(LCD_FILE, brightness);
+    int panel_mode = read_int(LCD_MODE_FILE);
+    if (panel_mode = 3) {
+        /* Set the secondary backlight to 0 in normal usage mode */
+        write_int(LCD_EX_FILE, 0);
+        err = write_int(LCD_FILE, brightness);
+    } else {
+        /* Set the primary backlight to 0 in ambient mode */
+        write_int(LCD_FILE, 0);
+        /* Divide brightness by 3 in order to actually be in a low power mode */
+        err = write_int(LCD_EX_FILE, brightness/3);
+    }
     pthread_mutex_unlock(&g_lock);
     return err;
 }
