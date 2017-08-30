@@ -13,7 +13,7 @@ on boot
 on property:sys.boot_completed=1
     write /sys/devices/virtual/lg_rgb_led/use_patterns/setting 0
 
-service light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.alice
+service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.alice
     class hal
     user system
     group system
