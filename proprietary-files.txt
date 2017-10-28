@@ -8,22 +8,17 @@ vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Camera
-bin/mm-qcamera-app
-bin/mm-qcamera-daemon
-lib/hw/camera.msm8996.so
-lib/libarcsoft_beauty_shot.so
-lib/libfilm_emulation.so
-lib/libHDR.so
-lib/libmm-qcamera.so
-lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libmorpho_image_stab31.so
-lib/libmorpho_superzoom.so
-lib/libqomx_core.so
+vendor/bin/mm-qcamera-app
+vendor/bin/mm-qcamera-daemon
+vendor/lib/hw/camera.msm8996.so
+vendor/lib/libarcsoft_beauty_shot.so
+vendor/lib/libfilm_emulation.so
 vendor/lib/libflash_pmic.so
+vendor/lib/libHDR.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
+vendor/lib/libmm-qcamera.so
 vendor/lib/libmmcamera2_aec_lg.so
 vendor/lib/libmmcamera2_awb_lg.so
 vendor/lib/libmmcamera2_c2d_module.so
@@ -62,6 +57,7 @@ vendor/lib/libmmcamera_imx234.so
 vendor/lib/libmmcamera_imx234_eeprom.so
 vendor/lib/libmmcamera_imx268.so
 vendor/lib/libmmcamera_imx268_eeprom.so
+vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmcamera_isp_abf47.so
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so
 vendor/lib/libmmcamera_isp_bf_stats47.so
@@ -116,10 +112,14 @@ vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmjpeg.so
+vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
+vendor/lib/libmorpho_image_stab31.so
+vendor/lib/libmorpho_superzoom.so
 vendor/lib/libois_bu24333gwl.so
 vendor/lib/libois_lc898122.so
+vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
