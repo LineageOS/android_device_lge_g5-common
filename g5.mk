@@ -51,3 +51,8 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_h1.conf:system/etc/sensors/sensor_def_common.conf
+
+# Vendor security patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2017-11-16
+
