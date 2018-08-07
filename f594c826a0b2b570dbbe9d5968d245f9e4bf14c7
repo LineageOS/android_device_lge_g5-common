@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1457d8a9_57bccdea",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 19507
+      },
+      "writtenOn": "2018-08-07T04:48:08Z",
+      "side": 1,
+      "message": "Will the size of the new vendor partition be 500MB or 512MB?\nhttps://review.lineageos.org/c/LineageOS/android_device_lge_msm8996-common/+/221553/7/scripts/vendor.sh#61",
+      "revId": "f594c826a0b2b570dbbe9d5968d245f9e4bf14c7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
