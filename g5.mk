@@ -15,6 +15,8 @@
 # limitations under the License.
 #
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
+
 # Inherit proprietary blobs
 $(call inherit-product-if-exists, vendor/lge/g5-common/g5-common-vendor.mk)
 
