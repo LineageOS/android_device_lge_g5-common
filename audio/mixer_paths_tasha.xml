@@ -1889,7 +1889,7 @@
 
     <path name="speaker-mic">
         <path name="dmic3" />
-        <ctl name="DEC7 Volume" value="84" />
+        <ctl name="DEC7 Volume" value="111" />
     </path>
 
     <path name="speaker-mic-liquid">
@@ -1943,7 +1943,7 @@
 
     <path name="handset-mic">
         <path name="dmic1" />
-        <ctl name="DEC7 Volume" value="84" />
+        <ctl name="DEC7 Volume" value="111" />
     </path>
 
     <path name="handset-mic-db">
@@ -2073,7 +2073,7 @@
 
     <path name="voice-speaker-mic">
         <path name="speaker-mic" />
-        <ctl name="DEC7 Volume" value="84" />
+        <ctl name="DEC7 Volume" value="111" />
     </path>
 
     <path name="voice-speaker-vbat">
