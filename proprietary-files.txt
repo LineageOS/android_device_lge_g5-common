@@ -10,7 +10,7 @@ vendor/etc/acdbdata/Speaker_cal.acdb
 # Camera
 vendor/bin/mm-qcamera-app
 vendor/bin/mm-qcamera-daemon
-vendor/lib/hw/camera.msm8996.so
+vendor/lib/hw/camera.msm8996.so|7b37c5291b43b34ac0984cfd0afcc0986b072b59
 vendor/lib/libarcsoft_beauty_shot.so
 vendor/lib/libfilm_emulation.so
 vendor/lib/libflash_pmic.so
