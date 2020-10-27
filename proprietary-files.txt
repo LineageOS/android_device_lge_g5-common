@@ -12,6 +12,7 @@ vendor/bin/mm-qcamera-app
 vendor/bin/mm-qcamera-daemon
 vendor/lib/hw/camera.msm8996.so
 vendor/lib/libarcsoft_beauty_shot.so
+vendor/lib/libbwfocuspeaking.so
 vendor/lib/libfilm_emulation.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libHDR.so
