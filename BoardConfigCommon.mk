@@ -42,4 +42,4 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 25241321472
 BOARD_SEPOLICY_DIRS += $(DEVICE_COMMON_PATH)/sepolicy
 
 # inherit from the proprietary version
--include vendor/lge/g5-common/BoardConfigVendor.mk
+include vendor/lge/g5-common/BoardConfigVendor.mk
