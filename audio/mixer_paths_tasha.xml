@@ -2595,6 +2595,7 @@
 
     <path name="unprocessed-mic">
         <path name="unprocessed-handset-mic" />
+        <ctl name="DEC7 Volume" value="100" />
     </path>
 
     <path name="unprocessed-stereo-mic">
