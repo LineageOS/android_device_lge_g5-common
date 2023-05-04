@@ -1,3 +1,6 @@
+### All blobs from this list, unless pinned and noted as otherwise,
+##  are from from h1_global_com-user 8.0.0 OPR1.170623.032 1908116574a00 release-keys
+
 # Audio - ACBD
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
@@ -11,10 +14,10 @@ vendor/etc/acdbdata/Speaker_cal.acdb
 vendor/bin/mm-qcamera-app
 vendor/bin/mm-qcamera-daemon
 vendor/lib/hw/camera.msm8996.so
-vendor/lib/libHDR.so
-vendor/lib/libarcsoft_beauty_shot.so
-vendor/lib/libbwfocuspeaking.so
-vendor/lib/libfilm_emulation.so
+system/lib/libHDR.so:vendor/lib/libHDR.so
+system/lib/libarcsoft_beauty_shot.so:vendor/lib/libarcsoft_beauty_shot.so
+system/lib/libbwfocuspeaking.so:vendor/lib/libbwfocuspeaking.so
+system/lib/libfilm_emulation.so:vendor/lib/libfilm_emulation.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
@@ -118,8 +121,8 @@ vendor/lib/libmmjpeg.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
-vendor/lib/libmorpho_image_stab31.so
-vendor/lib/libmorpho_superzoom.so
+system/lib/libmorpho_image_stab31.so:vendor/lib/libmorpho_image_stab31.so
+system/lib/libmorpho_superzoom.so:vendor/lib/libmorpho_superzoom.so
 vendor/lib/libois_bu24333gwl.so
 vendor/lib/libois_lc898122.so
 vendor/lib/libqomx_core.so
@@ -329,16 +332,16 @@ system/etc/camera/imx234_chromatix.xml:vendor/etc/camera/imx234_chromatix.xml
 system/etc/camera/imx268_chromatix.xml:vendor/etc/camera/imx268_chromatix.xml
 system/etc/camera/t4ka3_chromatix.xml:vendor/etc/camera/t4ka3_chromatix.xml
 
-# Fingerprint
-vendor/bin/fpc_early_loader
--vendor/lib/hw/fingerprint.msm8996.so
-vendor/lib/lib_fpc_tac_shared.so
-vendor/lib/libfpfactory.so
-vendor/lib/libfpfactory_jni.so
--vendor/lib64/hw/fingerprint.msm8996.so
-vendor/lib64/lib_fpc_tac_shared.so
-vendor/lib64/libfpfactory.so
-vendor/lib64/libfpfactory_jni.so
+# Fingerprint - from h1_global_com-user 7.0 NRD90U 181350252b2c6 release-keys
+system/bin/fpc_early_loader:vendor/bin/fpc_early_loader|53cbbcf58e98958ada529058d6214ad212b63097
+-system/lib/hw/fingerprint.msm8996.so:vendor/lib/hw/fingerprint.msm8996.so|8eca23e20f75ac3c426e8d4cc269fe86ffaec1f6
+system/lib/lib_fpc_tac_shared.so:vendor/lib/lib_fpc_tac_shared.so|9a8560b046a3a9ad703dc0bd2c5592da1091356a
+system/lib/libfpfactory.so:vendor/lib/libfpfactory.so|0f707d8fdceaa19fdee8bf0283eedcd7249edb27
+system/lib/libfpfactory_jni.so:vendor/lib/libfpfactory_jni.so|b081e35b12165491c415468e2b631d8ce003bfee
+-system/lib64/hw/fingerprint.msm8996.so:vendor/lib64/hw/fingerprint.msm8996.so|6b8a27459cafd2d27b4b1bd8dce90f6e3070a35c
+system/lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|d2f0fa95630316175b9df6962506eedac63992f7
+system/lib64/libfpfactory.so:vendor/lib64/libfpfactory.so|296b1bdddf61916afd01cc57a2432418386357c9
+system/lib64/libfpfactory_jni.so:vendor/lib64/libfpfactory_jni.so|69a57f80ab6405780f2cbe311f1c5f1ac62eee4b
 
 # OIS firmware
 system/media/bu24234_dl_program_Alice_LGITAct_ICG1020S_rev13_S_data1_0x4E.bin:vendor/firmware/bu24234_dl_program_Alice_LGITAct_ICG1020S_rev13_S_data1_0x4E.bin
@@ -359,6 +362,3 @@ system/media/bu24234_dl_program_Alice_MTMAct_ICG1020S_rev3.1_S_data1_0x1F.bin:ve
 system/media/bu24234_dl_program_Alice_MTMAct_ICG1020S_rev3.1_S_data2_0x1F.bin:vendor/firmware/bu24234_dl_program_Alice_MTMAct_ICG1020S_rev3.1_S_data2_0x1F.bin
 system/media/bu24234_dl_program_Alice_MTMAct_K2G2IS_rev1_S_data1_0x03.bin:vendor/firmware/bu24234_dl_program_Alice_MTMAct_K2G2IS_rev1_S_data1_0x03.bin
 system/media/bu24234_dl_program_Alice_MTMAct_K2G2IS_rev1_S_data2_0x03.bin:vendor/firmware/bu24234_dl_program_Alice_MTMAct_K2G2IS_rev1_S_data2_0x03.bin
-
-# Postprocessing
-vendor/etc/qdcm_calib_data_LGD_SIC_LG4946_1440p_Dual_cmd_mode_dsi_panel.xml
