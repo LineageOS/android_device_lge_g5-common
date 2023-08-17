@@ -1,5 +1,5 @@
 ### All blobs from this list, unless pinned and noted as otherwise,
-### are from from h1_global_com-user 8.0.0 OPR1.170623.032 1908116574a00 release-keys
+### are from from elsa_kt_kr-user 9 PKQ1.190522.001 20192161159c5 release-keys
 
 # Audio - ACBD
 vendor/etc/acdbdata/Bluetooth_cal.acdb
@@ -10,8 +10,8 @@ vendor/etc/acdbdata/Hdmi_cal.acdb
 vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
 
-# Bluetooth - from elsa_att_us-user 8.0.0 OPR1.170623.032 181871124f959 release-keys
-vendor/firmware/BCM4358A3.hcd:vendor/firmware/BCM43xx.hcd|b8e367b5d02a19920716f832d59b061add049d88
+# Bluetooth - from elsa_kt_kr-user 9 PKQ1.190522.001 20192161159c5 release-keys
+vendor/firmware/BCM4358A3_001.004.015.0095.0168_KR_ORC.HCD:vendor/firmware/BCM43xx.hcd|f08ab1623250abbe73cbf4514e6d3cab40a4d022
 
 # Camera
 system/lib/libHDR.so:vendor/lib/libHDR.so
