@@ -27,6 +27,9 @@ TARGET_LD_SHIM_LIBS += \
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_COMMON_PATH)/manifest.xml
 
+# Kernel
+TARGET_KERNEL_CONFIG += vendor/lge/lge_alice_common.config
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
