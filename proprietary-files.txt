@@ -1,6 +1,12 @@
 ### All blobs from this list, unless pinned and noted as otherwise,
 ### are from from h1_global_com-user 8.0.0 OPR1.170623.032 1908116574a00 release-keys
 
+# Current blobs with ELF checks disabled:
+# libmmcamera2_mct.so, libmmcamera_faceproc.so, libmmcamera_faceproc2.so are unable resolve the following symbol: __aeabi_uldivmod (32-bit)
+# libmmcamera2_aec_lg, libmmcamera2_awb_lg.so are unable to resolve the following symbols: __aeabi_memcpy@LIBC_PRIVATE, __aeabi_memset@LIBC_PRIVATE,  __gnu_Unwind_Find_exidx@LIBC_PRIVATE,
+# libbwfocuspeaking.so is unable to resolve the following symbol: android_getCpuFeatures
+# libmmcamera_ppeiscore.so is unable to resolve the following symbol: glGetProgramBinary, glProgramBinary
+
 # Audio - ACBD
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
@@ -13,7 +19,7 @@ vendor/etc/acdbdata/Speaker_cal.acdb
 # Camera
 system/lib/libHDR.so:vendor/lib/libHDR.so
 system/lib/libarcsoft_beauty_shot.so:vendor/lib/libarcsoft_beauty_shot.so
-system/lib/libbwfocuspeaking.so:vendor/lib/libbwfocuspeaking.so
+system/lib/libbwfocuspeaking.so:vendor/lib/libbwfocuspeaking.so;DISABLE_CHECKELF
 system/lib/libfilm_emulation.so:vendor/lib/libfilm_emulation.so
 system/lib/libmorpho_image_stab31.so:vendor/lib/libmorpho_image_stab31.so
 system/lib/libmorpho_superzoom.so:vendor/lib/libmorpho_superzoom.so
@@ -25,8 +31,8 @@ vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmm-qcamera.so
-vendor/lib/libmmcamera2_aec_lg.so
-vendor/lib/libmmcamera2_awb_lg.so
+vendor/lib/libmmcamera2_aec_lg.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_awb_lg.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
@@ -34,7 +40,7 @@ vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera2_is.so
 vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_mct.so
+vendor/lib/libmmcamera2_mct.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_mct_shimlayer.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
@@ -49,8 +55,8 @@ vendor/lib/libmmcamera_eeprom_checksum.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmmcamera_faceproc2.so
+vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera_faceproc2.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
@@ -109,7 +115,7 @@ vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so
+vendor/lib/libmmcamera_ppeiscore.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_t4ka3.so
@@ -337,11 +343,11 @@ system/bin/fpc_early_loader:vendor/bin/fpc_early_loader|53cbbcf58e98958ada529058
 -system/lib/hw/fingerprint.msm8996.so:vendor/lib/hw/fingerprint.msm8996.so|8eca23e20f75ac3c426e8d4cc269fe86ffaec1f6
 system/lib/lib_fpc_tac_shared.so:vendor/lib/lib_fpc_tac_shared.so|9a8560b046a3a9ad703dc0bd2c5592da1091356a
 system/lib/libfpfactory.so:vendor/lib/libfpfactory.so|0f707d8fdceaa19fdee8bf0283eedcd7249edb27
-system/lib/libfpfactory_jni.so:vendor/lib/libfpfactory_jni.so|b081e35b12165491c415468e2b631d8ce003bfee
+system/lib/libfpfactory_jni.so:vendor/lib/libfpfactory_jni.so;DISABLE_CHECKELF;DISABLE_DEPS|b081e35b12165491c415468e2b631d8ce003bfee
 -system/lib64/hw/fingerprint.msm8996.so:vendor/lib64/hw/fingerprint.msm8996.so|6b8a27459cafd2d27b4b1bd8dce90f6e3070a35c
 system/lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|d2f0fa95630316175b9df6962506eedac63992f7
 system/lib64/libfpfactory.so:vendor/lib64/libfpfactory.so|296b1bdddf61916afd01cc57a2432418386357c9
-system/lib64/libfpfactory_jni.so:vendor/lib64/libfpfactory_jni.so|69a57f80ab6405780f2cbe311f1c5f1ac62eee4b
+system/lib64/libfpfactory_jni.so:vendor/lib64/libfpfactory_jni.so;DISABLE_CHECKELF;DISABLE_DEPS|69a57f80ab6405780f2cbe311f1c5f1ac62eee4b
 
 # OIS firmware
 system/media/bu24234_dl_program_Alice_LGITAct_ICG1020S_rev13_S_data1_0x4E.bin:vendor/firmware/bu24234_dl_program_Alice_LGITAct_ICG1020S_rev13_S_data1_0x4E.bin
