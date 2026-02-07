@@ -117,7 +117,6 @@ vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so;DISABLE_CHECKELF
-vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_t4ka3.so
 vendor/lib/libmmcamera_t4ka3_eeprom.so
